@@ -27,7 +27,7 @@ feedfinder.getFeed(url)
   })
   .catch( e => {
     console.error(e)
-    // return a string
+    // returns a string
   })
 
   feedfinder.getSite(feed)
@@ -74,7 +74,7 @@ Note that the error message is returned as an error - so if you don't catch it, 
 
 ### getSite
 
-`getSite()` take a full feed URL and returns an object with the site url, the provided feed url, and the site name, or alternatively returns an error in the form of a string.
+`getSite(url)` take a full feed URL and returns an object with the site url, the provided feed url, and the site name, or alternatively returns an error in the form of a string.
 
 Examples:
 
@@ -99,6 +99,6 @@ feedfinder.getSite("https://www.example.com/rss")
 
 ## Caveats
 
-Well-formed web pages will list their RSS/Atom feed in a `<link>`element in the head, however sometimes there is a feed for a page but it is not referred to in a head `<link>` element. In this case, _feedfinder_ looks in the body of the page for anchor links (i.e. `<a>` elements) that look like they might point to feeds. If there is more than one link to a likely feed, _the first one listed will be used_. This is likely to be what you want, but there is only so much that can be done with poorly-structured pages so ...it might not.
+Well-formed web pages will list their RSS/Atom feed in a `<link>`element in the head, however sometimes there is a feed for a page but it is not referred to in a head `<link>` element. In this case, _feedfinder_ looks in the body of the page for anchor links (i.e. `<a>` elements) that look like they might point to feeds. If there is more than one link to a likely feed, **the first one listed will be used**. This is likely to be what you want, but there is only so much that can be done with poorly-structured pages so ...it might not be.
 
-YouTube users, channels and playlists should all work as long as YouTube does not change the way it constructs RSS feeds - they are not listed on pages, but as the form is known, we can construct them from the ID.
+YouTube user, channel and playlist pages should all work as long as YouTube does not change the way it constructs RSS feeds - they are not listed on pages, but as the form is known, we can construct them from the ID.
