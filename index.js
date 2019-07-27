@@ -1,21 +1,19 @@
 const axios = require('axios') // for requesting web resources
 const cheerio = require('cheerio') // jQuery for node
 const feedparser = require('feedparser-promised') // for ...parsing feeds
-const debug = require('debug'), name = 'Rockpool' // debug for development
+
+const returnFeedInfo = function(args) {
+  // extract the base domain URL using a regex
+  var baseURL = /(.+(\/+){2})+(\w|\d|\.|-)*/.exec(args.url)[0];
+  // if the feed address is relative we need to add it to the base domain URL
+  var feed = /^http/.test(args.feed) ? args.feed : `${baseURL}${args.feed}`;
+  args.feed = feed; // update feed address
+  return args
+}
 
 const getFeed = function(url) {
-	return new Promise( (resolve, reject) => {
-
+  return new Promise( (resolve, reject) => {
     axios(url).then(function(res) {
-      const returnFeedInfo = function(args) {
-        // extract the base domain URL using a regex
-        var baseURL = /(.+(\/+){2})+(\w|\d|\.|-)*/.exec(args.url)[0];
-        // if the feed address is relative we need to add it to the base domain URL
-        var feed = /^http/.test(args.feed) ? args.feed : `${baseURL}${args.feed}`;
-        args.feed = feed; // update feed address
-        resolve(args)
-      }
-
       const $ = cheerio.load(res.data)
       const title = $('title').text() // get the title from the head <title> element
       // get the RSS or Atom feed element
@@ -23,24 +21,29 @@ const getFeed = function(url) {
       const atom = $('link[type="application/atom+xml"]').clone() || $('link[type="application/x.atom+xml"]').clone() || $('link[type="application/x-atom+xml"]').clone()
       const elem = rss.length ? rss : atom // If rss has any content (i.e. it actually exists), assign its value to elem, otherwise assign the value of atom
       if (!elem[0] || !elem) { // elem may be null or not have any child nodes if there is no feed listed in the head
+
         // YouTube channels don't list the feed anywhere, but we can construct a feed URL because they are always the same structure
-        const rx = /(.+(\/+){2})+((\w|\d|\.|-)*)(\/(.*)\/)?([a-zA-Z0-9]*)/
+        const rx = /(.+(\/+){2})+((\w|\d|\.|-)*)((\/(.*)(\/|\?list\=))|(\/(playlist)\?list=))?([a-zA-Z0-9-]*)/
+        
         if (rx.exec(url)[3].toLocaleLowerCase() === "www.youtube.com") {
-          const type = rx.exec(url)[6].toLocaleLowerCase()
+          const type = rx.exec(url)[7].toLocaleLowerCase()
           if (type === "user") {
             // build feed URL for users
-            let feed = `https://www.youtube.com/feeds/videos.xml?user=${rx.exec(res.config.url)[7]}`
-            return returnFeedInfo({url: url, feed: feed, title: title})
+            let feed = `https://www.youtube.com/feeds/videos.xml?user=${rx.exec(res.config.url)[11]}`
+            let args = returnFeedInfo({url: url, feed: feed, title: title})
+            resolve(args)
           }
           if (type === "channel") {
             // build feed URL for channels
-            let feed = `https://www.youtube.com/feeds/videos.xml?channel_id=${rx.exec(res.config.url)[7]}`
-            return returnFeedInfo({url: url, feed: feed, title: title})
+            let feed = `https://www.youtube.com/feeds/videos.xml?channel_id=${rx.exec(res.config.url)[11]}`
+            let args = returnFeedInfo({url: url, feed: feed, title: title})
+            resolve(args)
           }
           if (type === "playlist") {
             // build feed URL for playlists
-            let feed = `https://www.youtube.com/feeds/videos.xml?playlist_id=${rx.exec(res.config.url)[7]}`
-            return returnFeedInfo({url: url, feed: feed, title: title})
+            let feed = `https://www.youtube.com/feeds/videos.xml?playlist_id=${rx.exec(res.config.url)[11]}`
+            let args = returnFeedInfo({url: url, feed: feed, title: title})
+            resolve(args)
           }
         } else {
           // sometimes there *is* a feed but it's not listed in the head.
@@ -54,7 +57,8 @@ const getFeed = function(url) {
               const isFeed = $(this)[0].attribs.href.match(regex) // if the last section of the URL ends in atom, rss, rss2, feed or any of those + '.xml', it's the feed
               if (isFeed) {
                 let feed = $(this)[0].attribs.href
-                return returnFeedInfo({url: url, feed: feed, title: title})
+                let args = returnFeedInfo({url: url, feed: feed, title: title})
+                resolve(args)
               } 
             }
           })
@@ -64,7 +68,8 @@ const getFeed = function(url) {
       } else {
         // if there was an rss or atom link in the <head>, we just use that!
         let feed = elem[0].attribs.href // get the feed and title from the rss link element
-        return returnFeedInfo({url: url, feed: feed, title: title})
+        let args = returnFeedInfo({url: url, feed: feed, title: title})
+        resolve(args)
       }
     })
     .catch(e => {
@@ -134,5 +139,6 @@ getFeed("https://www.hughrundle.net")
 
 module.exports = {
   getFeed: getFeed,
-  getSite: getSite
+  getSite: getSite,
+  __returnFeedInfo : returnFeedInfo
 }
