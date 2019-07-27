@@ -74,7 +74,7 @@ Note that the error message is returned as an error - so if you don't catch it, 
 
 ### getSite
 
-`getSite(url)` take a full feed URL and returns an object with the site url, the provided feed url, and the site name, or alternatively returns an error in the form of a string.
+`getSite(url)` takes a full feed URL and returns an object with the site url, the provided feed url, and the site name, or alternatively returns an error in the form of a string.
 
 Examples:
 
