@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Example Site with no link to feed in header</title>
+  <meta name="description" content="Based on Sam Popowich's blog" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="http://site-with-anchor-in-body.net">
+
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+</head>
+  <body>
+    <!-- header start -->
+    <a href="http://site-with-anchor-in-body.net" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/background.jpg)"></span></a>
+    <!-- header end -->
+    <!-- content start -->
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="teaserimage">
+          <div class="teaserimage-image" style="background-image: url(/assets/images/mega.jpg)">
+          Teaser Image
+          </div>
+        </div>
+        <header class="blog-header">
+          <a class="blog-logo" href="http://site-with-anchor-in-body.net" style="background-image: url('/assets/images/backgroundf.jpg')">My Site</a>
+          <h1 class="blog-title">Example Site</h1>
+          <h2 class="blog-description">Based on Sam Popowich's blog</h2>
+          <div class="custom-links">
+            <a class="icon-twitter" href="https://twitter.com/hughrundle">
+              <i class="fa fa-twitter"></i>
+            </a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a class="icon-github" href="https://github.com/hughrun">
+              <i class="fa fa-github"></i>
+            </a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            <a href="/posts">Posts</a>
+            <a href="/resume/">Resume</a>
+            <a href="/presentations/">Presentations</a>
+            <a href="/publications/">Publications</a>
+            <a href="/slides/">Slides</a>
+            <a href="/contact/">Contact</a>
+            <a href="/archive/">Archive</a>
+          </div>
+        </header>
+        <main class="content" role="main">
+          <!-- all the main content would be here, but this is just a demo page -->
+        </main>
+      </div>
+    </div>
+    <!-- content end -->
+    <!-- footer start -->
+    <footer class="site-footer">
+       <!-- NOTE: THE LINK TO THE FEED IS HERE -->
+      <a class="subscribe" href="/feed.xml"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe!</span></a>
+        <div class="inner">
+            <section class="copyright">
+              This work is subject to a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license
+            </section>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+  </body>
+</html>

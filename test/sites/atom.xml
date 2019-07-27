@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://timsherratt.org/atom.xml" rel="self" type="application/atom+xml" /><link href="https://timsherratt.org/" rel="alternate" type="text/html" /><updated>2019-07-06T13:05:28+10:00</updated><id>https://timsherratt.org/</id><title type="html">Tim Sherratt</title><subtitle>Historian and hacker</subtitle><author><name>Tim Sherratt</name></author><entry><title type="html">Trove: connecting us to the past</title><link href="https://timsherratt.org/blog/trove-connecting-us/" rel="alternate" type="text/html" title="Trove: connecting us to the past" /><published>2019-07-06T00:00:00+10:00</published><updated>2019-07-06T00:00:00+10:00</updated><id>https://timsherratt.org/blog/trove-connecting-us</id><content type="html" xml:base="https://timsherratt.org/blog/trove-connecting-us/">&lt;p&gt;&lt;strong&gt;Published in &lt;em&gt;Teaching History&lt;/em&gt; (Journal of the History Teachers Association of NSW), vol. 53, no. 2 (June 2019).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ask people to describe &lt;a href=&quot;https://trove.nla.gov.au/&quot;&gt;Trove&lt;/a&gt; in a single word, and they we generally answer ‘newspapers’. And why not? By making more than 200 million Australian newspaper articles from 1803 onwards available online, Trove has changed the practice of history in ways we don’t yet understand.&lt;/p&gt;
+
+&lt;p&gt;But as revolutionary as Trove’s newspapers have been, there’s much more to explore. Created by the National Library of Australia, Trove is a digital repository, a collection of collections, and a platform for collaboration and creativity. Not only is it an important starting point for any historical research, it raises critical questions about how digital resources are changing our access to the past.&lt;/p&gt;
+
+&lt;h2 id=&quot;not-just-newspapers&quot;&gt;Not just newspapers&lt;/h2&gt;
+
+&lt;p&gt;Before we move on from the newspapers, it’s worth reflecting on sheer variety of titles that have been digitised and made easily accessible online. You won’t just find the familiar metropolitan dailies, there’s hundreds of small regional newspapers as well. There’s political papers, religious papers, community papers in French, German, Croatian, and even Chinese. One of my favourites is the &lt;a href=&quot;https://trove.nla.gov.au/newspaper/title/706&quot;&gt;&lt;em&gt;Chinese Advertiser&lt;/em&gt;&lt;/a&gt; (later the &lt;em&gt;English and Chinese Advertiser&lt;/em&gt;), which was published on the Ballarat gold fields in the 1850s. Only ten issues are known to survive and they’re all in Trove.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/Chinese-Advertiser.png&quot; alt=&quot;Page of the Chinese Advertiser&quot; /&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;http://nla.gov.au/nla.news-page15910494&quot;&gt;http://nla.gov.au/nla.news-page15910494&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The digitisation process creates images of each newspaper page. Then, through a process known as Optical Character Recognition (OCR), it breaks the page up into separate articles, and extracts their textual content. By turning images into text, Trove makes those 200 million articles searchable.&lt;/p&gt;
+
+&lt;p&gt;But outside of Trove’s newspaper zone, there are many other digitised resources to explore online. In the journals zone, for instance, you’ll find more than 4,000 issues of &lt;a href=&quot;https://nla.gov.au/nla.obj-68375465&quot;&gt;&lt;em&gt;The Bulletin&lt;/em&gt;&lt;/a&gt; from 1880 to 1968. In the late nineteenth century, The Bulletin’s mix of politics and literature fostered both a new sense of radical nationalism, and support for the racist ideal of ‘White Australia’. Other digitised journals include the NSW &lt;a href=&quot;http://nla.gov.au/nla.obj-748113553&quot;&gt;&lt;em&gt;School Magazine of Literature for our Boys and Girls&lt;/em&gt;&lt;/a&gt; from 1919 to 1954, the &lt;a href=&quot;http://nla.gov.au/nla.obj-310385031&quot;&gt;&lt;em&gt;Pacific Islands Monthly&lt;/em&gt;&lt;/a&gt; from 1930 to 2000, the &lt;a href=&quot;https://nla.gov.au/nla.obj-389050376&quot;&gt;&lt;em&gt;Australian Woman’s Mirror&lt;/em&gt;&lt;/a&gt; from 1924 to 1954, the &lt;a href=&quot;http://nla.gov.au/nla.obj-589648812&quot;&gt;&lt;em&gt;Wireless Weekly&lt;/em&gt;&lt;/a&gt; from 1922 to 1943, and even the &lt;a href=&quot;http://nla.gov.au/nla.obj-760030452&quot;&gt;Kennel Control Council’s gazette&lt;/a&gt; from 1932 to 1969!&lt;/p&gt;
+
+&lt;p&gt;There are more than 300 digitised journals in Trove which, like the newspapers, can be searched at the level of individual articles. However, it’s currently quite difficult to search within a particular journal on Trove. To help with this, I created a simple web app that helps you &lt;a href=&quot;https://trove-titles.herokuapp.com/&quot;&gt;to explore the digitised journals&lt;/a&gt; – just select the titles you’re interested in, insert some keywords, and the app will build your search and redirect you back to the results in Trove.&lt;/p&gt;
+
+&lt;p&gt;Other Trove zones – books, pictures, and maps – also contain large volumes of digitised material that you can view and use online. Amongst the books you’ll find a fascinating collection of ephemera – things like leaflets, posters, pamphlets, certificates, and even playbills. There are, for example, a number of items relating to wartime recruiting and the WWI conscription debate.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/nla.obj-508114389-1.jpg&quot; alt=&quot;Conscription poster&quot; /&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;https://trove.nla.gov.au/nla.obj-508114389/&quot;&gt;https://trove.nla.gov.au/nla.obj-508114389/&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The map zone is particularly rich with freely available, digitised content. I did a bit of &lt;a href=&quot;https://glam-workbench.github.io/trove-maps/&quot;&gt;poking around recently&lt;/a&gt; and worked out that there are more than 20,000 maps available online, and about 80% of these are free of copyright restrictions. Like other digitised resources, the maps cannot only be viewed online, you can download high-resolution copies for printing or sharing. In the case of textual resources, like books and journals, you can download complete issues, individual page images, or the raw text extracted by OCR processing – just look for the download tab in the digital resource viewer.&lt;/p&gt;
+
+&lt;p&gt;However, as with the journals, finding all of this exciting digitised content can be difficult. There’s just so much stuff in Trove! One simple trick is to include the term “nla.obj” in your search. Digitised resources are given a unique identifier that includes this string, so you can use it to filter your results. If you’re interested in getting deep into the collection data, have a look at my &lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;GLAM Workbench&lt;/a&gt;. There you’ll find sections on Trove’s books, journals, and maps that include lists of resources and well as bulk collections of full text. Yes, that includes &lt;a href=&quot;https://glam-workbench.github.io/trove-journals/#data-and-text&quot;&gt;6.6gb of text extracted from 27,426 journal issues&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;We tend to use terms like ‘digital’ and ‘digitised’ interchangeably, but a large proportion of Trove’s digital resources didn’t go through any sort of digitisation process – they were just born that way! ‘Born digital’ works include a growing number of recent journals and books that were published electronically and are available online in formats like PDF or MOBI. But by far the biggest collection of born digital resources can be found in Trove’s archived websites zone. There’ll you’ll find an astonishing 5 billion snapshots of Australian websites since 1996.&lt;/p&gt;
+
+&lt;p&gt;But why would historians be interested in a collection of websites? Hmmm, perhaps we should reverse that question. How will future historians understand the 1990s or beyond without using web archives? Collections like these capture a wide range of social, political, and cultural activity that won’t have been documented anywhere else. As we know, websites change and disappear all the time, whether by design or accident. Web archives capture these changes, enabling us to look back in time, treating the internet itself as a historical source.&lt;/p&gt;
+
+&lt;h2 id=&quot;seeing-things-differently&quot;&gt;Seeing things differently&lt;/h2&gt;
+
+&lt;p&gt;Trove’s web archive raises another important question, just how do you make sense of collections on this sort of scale? What does it mean when you search for something in Trove’s newspapers and discover there are two million matching results? Digitisation has unlocked resources, enabling new forms of discovery and use, but with improved access has come the challenge of abundance. Just what does it all mean?&lt;/p&gt;
+
+&lt;p&gt;Fortunately, digital collections also offer new ways of seeing. Instead of reading through a list of two million search results, we can visualise the data in different forms to reveal patterns and changes. &lt;a href=&quot;http://dhistory.org/querypic/&quot;&gt;QueryPic&lt;/a&gt; is a tool I created to visualise searches in Trove’s newspapers. It shows the number of matching results per year, enabling you to examine change over time. For example, using QueryPic you can explore the question, when did the ‘Great War’ become ‘World War I’, by plotting how frequently the two phrases occurred in Australian newspapers. It’s easy to create your own QueryPics – just type in some keywords and press the button!&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/qp-greatwar.png&quot; alt=&quot;Conscription poster&quot; /&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;http://dhistory.org/querypic/43/&quot;&gt;http://dhistory.org/querypic/43/&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;One of my recent experiments shows another way of seeing a set of search results. After creating thumbnails from each of the newspaper articles in a search, I pasted them together into one, very big, deep zoomable image. This is what the ‘White Australia Policy’ looks like in Trove’s newspapers.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/wap.png&quot; alt=&quot;Conscription poster&quot; /&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;https://easyzoom.com/image/139535&quot;&gt;https://easyzoom.com/image/139535&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There’s a shift here from working with individual historical sources to analysing whole collections. This means extending our historical skill-set to include a range of new digital tools and methods. Once again, my &lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;GLAM Workbench&lt;/a&gt; provides a wide range of examples if you’re interested in exploring the possibilities further.&lt;/p&gt;
+
+&lt;p&gt;But while digital resources like Trove challenge traditional research methods, they also need critical evaluation. As with any historical source, we have to ask questions about context, reliability, and completeness.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/trove-articles-by-year.png&quot; alt=&quot;Conscription poster&quot; /&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;https://plot.ly/dashboard/wragge:494/present&quot;&gt;https://plot.ly/dashboard/wragge:494/present&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Here’s a chart that simply shows the number of digitised newspaper articles in Trove per year. What do you think caused the peak around 1914-15? Did something significant happen? Yes, it’s because of the war, but not in the way you might think. The peak is a result of digitisation priorities – in the lead up to the centenary of World War I it was decided to focus on digitising newspapers from the war period. If digitisation continues (and that’s dependent on continued funding), the peak will disappear. But for now it’s a useful reminder that Trove itself is a historical construction. While we enjoy the wonderfully rich content it delivers to our browsers, we have to think about what’s not there, what we can’t find, and why.&lt;/p&gt;
+
+&lt;p&gt;Trove challenges us in other ways as well. Instead of simply using resources, we can build them. By adding tags or comments to records, by creating lists, or by correcting OCR results in newspapers, we can help other Trove users find what they’re looking for. Through these sorts of contributions we are all building Trove together.&lt;/p&gt;
+
+&lt;p&gt;But we can also build completely new things based on the data Trove provides. Perhaps you’d like to play &lt;a href=&quot;http://headlineroulette.net/&quot;&gt;Headline Roulette&lt;/a&gt;, a simple game that tests your historical knowledge by asking you to guess the publication date of a randomly selected newspaper article. Even better, you could use the &lt;a href=&quot;https://glitch.com/~trove-headline-roulette&quot;&gt;‘do it yourself’ version of Headline Roulette&lt;/a&gt; to create your own customised game – limiting the newspaper articles to a particular topic or region. What about turning a Trove list into an online exhibition, or &lt;a href=&quot;https://101dhhacks.net/2018/01/21/trove-bots-for-all/&quot;&gt;building a Twitter bot&lt;/a&gt; to share Trove collections?&lt;/p&gt;
+
+&lt;p&gt;Trove is many things. Most of all it’s an opportunity to connect with Australia’s past in new and interesting ways.&lt;/p&gt;
+
+&lt;h2 id=&quot;selected-resources&quot;&gt;Selected resources&lt;/h2&gt;
+
+&lt;h3 id=&quot;using-trove&quot;&gt;Using Trove&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://trove.nla.gov.au/&quot;&gt;Trove&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/trove-tips-tricks&quot;&gt;Trove Tips &amp;amp; Tricks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://trove-titles.herokuapp.com/&quot;&gt;Explore Trove’s digitised journals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://troveplaces.herokuapp.com/map/&quot;&gt;Locate Trove newspapers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;trove-as-data&quot;&gt;Trove as data&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.dhistory.org/querypic/&quot;&gt;QueryPic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;GLAM Workbench&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://timsherratt.org/blog/who-belongs/&quot;&gt;Who belongs? Reading identity, ownership, and legitimacy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://updates.timsherratt.org/2019/05/09/over-the-last.html&quot;&gt;3,471 editorial cartoons from The Bulletin, 1886 to 1952&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;build-and-play&quot;&gt;Build and play&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://headlineroulette.net/&quot;&gt;Headline Roulette&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/~trove-headline-roulette&quot;&gt;Remix your own Headline Roulette&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/diy-trove-exhibition&quot;&gt;A DIY Trove Exhibition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://101dhhacks.net/2018/01/21/trove-bots-for-all/&quot;&gt;Trove bots for all!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Tim Sherratt</name></author><summary type="html">Published in Teaching History (Journal of the History Teachers Association of NSW), vol. 53, no. 2 (June 2019).</summary></entry><entry><title type="html">Who belongs? Reading identity, ownership, and legitimacy</title><link href="https://timsherratt.org/blog/who-belongs/" rel="alternate" type="text/html" title="Who belongs? Reading identity, ownership, and legitimacy" /><published>2019-02-14T00:00:00+11:00</published><updated>2019-02-14T00:00:00+11:00</updated><id>https://timsherratt.org/blog/who-belongs</id><content type="html" xml:base="https://timsherratt.org/blog/who-belongs/">&lt;p&gt;&lt;strong&gt;Invited presention at &lt;a href=&quot;http://www.delegia.com/app/netattm/attendee/page/81997&quot;&gt;From text to data – new ways of reading&lt;/a&gt;, National Library of Sweden, 5 February 2019.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The &lt;a href=&quot;https://slides.com/wragge/who-belongs/#/&quot;&gt;full set of slides&lt;/a&gt; are also available, as is &lt;a href=&quot;https://github.com/wragge/aliens-in-texts&quot;&gt;all the code and data&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with a question you’ve probably always wondered about: ‘Could I be an Australian?’.&lt;/p&gt;
+
+&lt;p&gt;Let’s see… Here’s a page from the Australian Citizenship Test. Applicants for citizenship need to answer 15 out of 20 multiple choice questions correctly.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/citizenship_test.png&quot; alt=&quot;Page from citizenship test&quot; /&gt;
+  &lt;figcaption&gt;Try the &lt;a href=&quot;https://immi.homeaffairs.gov.au/citizenship-subsite/files/practice-test.swf&quot;&gt;Practice Test online&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But apparently this isn’t hard enough. In 2017 &lt;a href=&quot;https://www.bbc.com/news/world-australia-39650480&quot;&gt;the government announced&lt;/a&gt; it would add a tougher English language requirement, as well as new questions that would test applicants’ understanding of ‘Australian values’.&lt;/p&gt;
+
+&lt;p&gt;The Prime Minister was unable at the time to clearly explain what these ‘Australian values’ were. Fortunately Twitter was there to help. The #australianvalues hashtag was soon trending  as the public offered a range of suggestions of what it meant to be Australian.&lt;/p&gt;
+
+&lt;p&gt;Being a good digital historian, I used the Documenting the Now project’s Twarc tool to &lt;a href=&quot;https://doi.org/10.6084/m9.figshare.4982747.v1&quot;&gt;document the resulting tweet storm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here’s a few of the suggestions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Saying “is it hot enough for you?” as a form of greeting in summer. #AustralianValues&lt;/li&gt;
+  &lt;li&gt;Never fucking ever barrack for New Zealand in any sport #AustralianValues&lt;/li&gt;
+  &lt;li&gt;Being used as imperialist cannon-fodder. #AustralianValues&lt;/li&gt;
+  &lt;li&gt;Finger wave when passing each other on long country highway; xenophobia #AustralianValues&lt;/li&gt;
+  &lt;li&gt;Casual racism #AustralianValues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The government’s proposed changes, which have yet to pass through parliament, are just one example of the way they have sought to portray citizenship as key weapon in the defence of national security. As well as making it harder to get, they’ve also introduced changes that would make it easier to take it away from those convicted of terrorism-related offences. As an election approaches in 2019, debates around ’border security’ will continue. As the #australianvalues debacle illustrates, the borders in need of protection are not only the continent’s geographic boundaries, but those that define who belongs.&lt;/p&gt;
+
+&lt;p&gt;Somewhat ironically, a number of Australian politicians have discovered in the last couple of years that they don’t belong in parliament. Barnaby Joyce, our deputy prime minister, for example, &lt;a href=&quot;https://www.abc.net.au/news/2017-08-25/barnaby-joyce-nominated-for-new-zealander-of-the-year/8842314&quot;&gt;found out he was a New Zealander&lt;/a&gt;. Unknowingly, he had gained NZ citizenship through his father, who was born there, and this ran afoul of the Australian Constitution’s requirement that members of parliament should not be ‘a subject or a citizen or entitled to the rights or privileges of of a subject or a citizen of a foreign power’.&lt;/p&gt;
+
+&lt;p&gt;Borders shift. Until 1948 there was no such thing as an Australian citizen — Australians were just British subjects. The deputy PM’s ties to New Zealand would have been no impediment to sitting in parliament, as New Zealanders were also British subjects. Over the twentieth century, Australia’s imperial brethren gradually became ‘foreign’.&lt;/p&gt;
+
+&lt;p&gt;In this talk today I want to look at some changes in the language of belonging in Australia, focussing on two words, ‘aliens’ and ‘immigrants’.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to present a detailed argument, nor am I going to offer a very sophisticated analysis. I’m mostly just counting words and pointing to interesting things. But I suppose even simple techniques can be pretty remarkable when they’re applied across large historical collections.&lt;/p&gt;
+
+&lt;p&gt;I also want to think about how we get the texts to the tools. I spend a lot of time hacking at the plumbing of digital collections — making connections, and unclogging pipes — trying to get the data to flow. While institutions digitise terabytes of text it’s often still a struggle to get the data out in a form that can be easily used and shared. Stories about moving data around are not very glamorous, but they’re important in understanding the limits of our infrastructures.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with 200 million newspaper articles, documenting a large part of Australia’s post-invasion history. &lt;a href=&quot;https://trove.nla.gov.au/newspaper/?q=&quot;&gt;Trove’s digitised newspapers&lt;/a&gt; are a wonder, but they’re also overwhelming. What does it mean when you type in a query and get back 5 million results?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://help.nla.gov.au/trove/building-with-trove/api&quot;&gt;Trove’s API&lt;/a&gt; delivers full text and metadata from the digitised newspapers in a form computers can understand and manipulate. But it also provides summary data, or facets, that we can use to create quick pictures of our searches — how do those millions of results break down year by year, for example?&lt;/p&gt;
+
+&lt;p&gt;Here we’re comparing the occurrence of two words over time — ‘naturalisation’ and ‘aliens’. Instead of the raw number of results, the chart is showing the matches as a proportion of the total articles for each year.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/qp-aliens-nat.png&quot; alt=&quot;Chart comparing frequency of aliens and naturalisation in Trove newspapers&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The code I used to create this chart is &lt;a href=&quot;https://nbviewer.jupyter.org/github/GLAM-Workbench/trove-newspapers/blob/master/QueryPic_deconstructed.ipynb&quot;&gt;available as a Jupyter notebook&lt;/a&gt;. It’s the latest version of a tool called QueryPic that I first created many years ago. Like the other examples in my &lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;GLAM Workbench&lt;/a&gt;, you can run the QueryPic code &lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspapers/master?urlpath=%2Fapps%2FQueryPic_deconstructed.ipynb&quot;&gt;live in your browser&lt;/a&gt;, create your own charts, and download the results. The workbench is intended to encourage experimentation and learning by providing useful tools and examples that expose their own workings. Let me know if you’d like a demo!&lt;/p&gt;
+
+&lt;p&gt;I’m comparing ‘aliens’ and ‘naturalisation’ because their meanings are historically entwined. An alien is someone from a foreign country. Naturalisation is the process by which a resident alien swears allegiance to their new home and is granted the rights that come with citizenship. The first half of the nineteenth century looks a bit messy, but you can see that the two terms follow each other fairly closely. This was a period when the Australian colonies passed various pieces of legislation relating to the naturalisation of non-British settlers. In South Australia, for example, there was a large population of German immigrants for whom naturalisation offered greater rights to land ownership.&lt;/p&gt;
+
+&lt;p&gt;But in the 1880s and 90s the terms start to diverge. This suggests the word ‘aliens’ was being used in a broader range of contexts.&lt;/p&gt;
+
+&lt;p&gt;If we throw the word ‘immigrants’ into the mix, we see that its occurrence drops away in the same period until it’s roughly on par with ‘aliens’. Setting aside the brutal irony of British colonists describing others as ‘aliens’ in a land they’d stolen from its original inhabitants, it seems that something unusual was happening in the 1890s.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/qp-aliens-immigrants.png&quot; alt=&quot;Chart comparing frequency of aliens and immigrants in Trove newspapers&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Indeed it was. The 1890s are notable in Australian history for a number of reasons. Economically, the eastern colonies plunged into depression, bringing an end to a period of rapid growth powered by gold and wool. Industrial conflict pushed trade unions into the political arena with the formation of the Labor Party. Nationalism was on the rise both culturally and politically, as the separate colonies moved towards federation in 1901. And attempts by the colonies to restrict Chinese immigration were transformed into a vision of national identity — the new nation of Australia would be young, strong, and ‘white’. In the early twentieth century this vision took legislative form as the White Australia policy.&lt;/p&gt;
+
+&lt;p&gt;Let’s dig a bit deeper. The Trove API can also be used to harvest large quantities of digitised newspaper articles, included the OCRd text. That’s great if you know how to code. For those who don’t I created a &lt;a href=&quot;https://glam-workbench.github.io/trove-harvester/&quot;&gt;Trove Newspaper Harvester&lt;/a&gt;. You feed it the url of a Trove search, and it gives you back a CSV file with metadata of all the matching articles, as well as the contents of each article in a separate text file. The &lt;a href=&quot;https://github.com/wragge/troveharvester&quot;&gt;original harvester&lt;/a&gt; is a Python command-line tool, but to lower the barriers that bit more I’ve recently created an &lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master?urlpath=%2Fapps%2Fnewspaper_harvester_app.ipynb&quot;&gt;app-ified version in a Jupyter notebook&lt;/a&gt; — just cut, paste, point and click.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/trove-harvester.gif&quot; alt=&quot;Trove Newspaper harvester&quot; /&gt;
+  &lt;figcaption&gt;Try it &lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspaper-harvester/master?urlpath=%2Fapps%2Fnewspaper_harvester_app.ipynb&quot;&gt;live on Binder&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;If you browse around my &lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;GLAM Workbench&lt;/a&gt; you’ll see lots of little ‘Use live on Binder’ buttons. These spin up the notebooks in a customised computing environment using a fabulous project called &lt;a href=&quot;https://mybinder.org/&quot;&gt;Binder&lt;/a&gt;. So it’s entirely possible to harvest many thousands of newspaper articles from Trove using nothing but your browser. Obviously for really big, or frequent, harvests you’d want to set up your own environment, with Jupyter installed locally. For example, I recently used the harvester notebook to download more than 2 million articles that included the word ‘Chinese’. It took about 13 hours.&lt;/p&gt;
+
+&lt;p&gt;For today’s experiment I harvested two batches of newspaper articles: 180,000 articles containing the word ‘aliens’, and half a million articles that included ‘immigrants’. I then ran a script across all the little text files to locate the target word within the text and grab five words on either side. I saved the results in a couple of CSV files for further examination.&lt;/p&gt;
+
+&lt;p&gt;You’ve probably already guessed that I’ve &lt;a href=&quot;https://github.com/wragge/aliens-in-texts&quot;&gt;shared the code for all this&lt;/a&gt; in a series of Jupyter notebooks. You could easily adapt the code to explore the occurrence of other words.&lt;/p&gt;
+
+&lt;p&gt;Let’s look at the words that appeared most frequently before ‘aliens’ in Australian newspapers, excluding standard stop words. ‘Enemy’ was by far the most common, but ‘coloured’, ‘undesirable’, and ‘asiatic’ are also near the top of the list.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-aliens.png&quot; alt=&quot;List of words appearing before aliens by frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;By plotting the frequencies over time, we can see, not surprisingly, that use of the term ‘enemy aliens’ peaks during the two world wars.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-aliens-time.png&quot; alt=&quot;Words appearing before aliens plotted by date and frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But for now I want to focus on the period before the first world war where we observed some of those large-scale changes. Here’s the same selection of words from 1880 to 1910, displayed in their relative proportions. It’s interesting that ‘pauper’ and ‘destitute’ are prominent at a time of high unemployment and industrial unrest. Dipping back into the articles you’ll see that the immigration of ‘pauper aliens’ was identified as cause for concern across the British empire, but the language was clearly picked up in Australia where an ‘Anti Pauper Aliens League’ was established.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-aliens-proportion.png&quot; alt=&quot;Words appearing before aliens plotted by date and proportion&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Does the shift from ‘asiatic’ to ‘coloured’ suggest something about the broadening of racial categories? Certainly this was occurring at a political level, where legislation to restrict Chinese arrivals was expanded to catch all non-white immigrants.&lt;/p&gt;
+
+&lt;p&gt;Both of these changes seem to fit with the appearance of ‘undesirable’ as a category of aliens. Not all foreign arrivals were equal. Not all belonged in Australia.&lt;/p&gt;
+
+&lt;p&gt;Similar patterns appear in words that occur before ‘immigrants’.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-immigrants.png&quot; alt=&quot;List of words appearing before immigrants by frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Both ‘undesirable’ and ‘desirable’ peak in the late nineteenth and early twentieth centuries. In 1901, the Immigration Restriction Act, the cornerstone of the White Australia Policy, gave legal force to these sorts of distinctions and created the category of ‘prohibited’ immigrants to exclude the unwanted. Although most of Trove’s digitised newspapers were published before 1955 for copyright reasons, there are enough from the later period for to suggest a transition from ‘prohibited’ to ‘illegal’.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-immigrants-time.png&quot; alt=&quot;Words appearing before immigrants plotted by date and frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Focusing again on the period around 1901, there seems to be a shift from discussion relating to the encouragement of immigration, reflected in the use of the term ‘assisted’, to issues of selection and control. As historians have noted, security played a greater role in shaping immigration policy after Federation. If Australia was to be ‘white’, it needed the right sort of settlers to occupy and defend its vast spaces.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-before-immigrants-prop.png&quot; alt=&quot;Words appearing before aliens plotted by date and proportion&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Also amongst the words appearing before ‘immigrants’ are ethnic and national groups. I thought these would also be interesting to observe through time.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/immigrants-origins.png&quot; alt=&quot;Words appearing before immigrants relating to ethnic or national origin&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Of course the peaks here say nothing about the number of immigrants arriving or living in Australia — it’s just a measure of how much they were being talked about. So the spike in ‘chinese’ immigrants in the 1880s reflects the introduction of anti-Chinese legislation. In the 1920s, concerns that some southern Europeans were not quite ‘white’ enough, no doubt contributed to the increased frequency of ‘italian’.&lt;/p&gt;
+
+&lt;p&gt;Let’s take this exploration further. &lt;em&gt;The Bulletin&lt;/em&gt; was the most widely-read weekly newspaper in Australia, and fostered a brand of radical nationalism. In the early twentieth century, it’s masthead included the slogan ‘Australia for the White Man’.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Bulletin&lt;/em&gt; from 1880 to 1968 has been digitised and is available on Trove. But not in the newspapers zone. Bulletin articles pop up in the ‘Journals’ zone, as do a growing range of full-text digitised magazines, journals, periodicals, and newsletters. These resources are in a different backend system from the newspapers. So while you can manually download the OCRd text of  each issue of the &lt;em&gt;The Bulletin&lt;/em&gt; from the web interface, you can’t get it through the Trove API.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, I was able to scrape a list of issue identifiers from the journal’s browse interface, and use them to automate the download of all the text files. Once again, there’s a &lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-workbench/blob/master/Trove/Cookbook/Harvesting-data-from-the-Bulletin.ipynb&quot;&gt;Jupyter notebook with all the code and explanation&lt;/a&gt;, but if you just want the texts, you can grab all 4,534 of them from this &lt;a href=&quot;https://github.com/wragge/trove-texts&quot;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another important collection of digitised texts are the Commonwealth Parliamentary Debates, also known as Hansard. All speeches made in the Australian parliament from 1901 have been digitised by the Parliamentary Library and marked up as well-structured XML files. It’s a fabulous resource, which unfortunately is hidden behind a horrible search interface.&lt;/p&gt;
+
+&lt;p&gt;I’ve harvested all the XML files from their interface and made them available through a &lt;a href=&quot;https://github.com/wragge/hansard-xml&quot;&gt;GitHub repository&lt;/a&gt;. (There’s no notebook for that one yet…)&lt;/p&gt;
+
+&lt;p&gt;Along the way I also ended up building my own &lt;a href=&quot;https://historichansard.net/&quot;&gt;online version of Hansard&lt;/a&gt;, complete with a new search interface. (It’s a long story…) One feature of my search interface is that you can save your results as a CSV file — an easy first step in the exploration of text as data.&lt;/p&gt;
+
+&lt;p&gt;So as a result of all this scraping and hacking I happen to have all the text from &lt;em&gt;The Bulletin&lt;/em&gt; and Hansard on my computer. Why not do something with it? I used much the same methodology as I had with the newspapers to pull out some data about words that appeared before ‘aliens’.&lt;/p&gt;
+
+&lt;p&gt;The results are pretty familiar, Both show wartime peaks for ‘enemy’ aliens, and both point to discussions of race and ‘suitability’ in the early years of the twentieth century.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/aliens-bulletin.png&quot; alt=&quot;List of words appearing before aliens in The Bulletin by frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/aliens-hansard.png&quot; alt=&quot;List of words appearing before aliens in Hansard by frequency&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;The Bulletin&lt;/em&gt;’s language might be more explicitly racist, but I was actually surprised at how many of the top twenty-five words were the same.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/bulletin-hansard-compared.png&quot; alt=&quot;Comparison of words appearing before aliens in the Bulletin and Hansard&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;So, after all that — in a truly groundbreaking piece of digital research, I may have discovered that the White Australia Policy was racist… Ok, so there’s nothing particularly unexpected in all these words, numbers and charts. But I think that it does underline the way language is mobilised and manipulated in the development and maintenance of racist systems like the White Australia Policy. Race was not mentioned in the Immigration Restriction Act. The mechanism of exclusion was the deceptively named Dictation Test, which could be given in any European language. Anyone who failed the test instantly became a ‘prohibited immigrant’ and could be arrested and deported. Words like ‘undesirable’ and ‘illegal’ help justify this sort of treatment.&lt;/p&gt;
+
+&lt;p&gt;But it was not only new arrivals whose status and legitimacy was subject to sudden change. What about all those ‘enemy’ aliens? What do you think happened to them? Another word that commonly occurs alongside ‘aliens’ is ‘naturalised’. But surely if you’re naturalised you’re no longer an alien?&lt;/p&gt;
+
+&lt;p&gt;If we chart those occurrences we see, once again, that the peaks coincide with the wars. Being naturalised did not stop you being interned. Your allegiances remained suspect. You were alien first, Australian second. And the peak in 1930 seems to relate to the Prime Minister’s insistence that federal departments should only employ naturalised aliens if ‘British’ workers were unavailable. ‘Naturalised aliens’ were British subjects, but not British enough…&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/naturalised-aliens.png&quot; alt=&quot;Frequency of naturalised aliens over time&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The words that define who can enter, and who belongs, also justify continued surveillance and control. Here’s what we see if we look at the words that come &lt;em&gt;after&lt;/em&gt; ‘aliens’ in newspapers. Systems of ‘alien registration’ were introduced during the two world wars and continued until 1971.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/words-after-aliens.png&quot; alt=&quot;Words after aliens over time&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Many of the records created through this system are held by the National Archives of Australia. RecordSearch, the National Archives online database, has no API, but guess what — I have &lt;a href=&quot;https://glam-workbench.github.io/recordsearch/&quot;&gt;a few notebooks and screen scrapers&lt;/a&gt; that can help you get data out.&lt;/p&gt;
+
+&lt;p&gt;Having harvested most of the series-level data from RecordSearch I can now aggregate it by a keyword or phrase. So I can tell you that series with the phrase ‘alien registration’ in their title take up more than one kilometre of shelf space in the National Archives.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;https://timsherratt.org/assets/images/alien-reg-length.png&quot; alt=&quot;Aggregated data about series with the phrase alien registration&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But what if they don’t have that term in their in title. Can we trust the language of our descriptive systems?&lt;/p&gt;
+
+&lt;p&gt;If you search in RecordSearch for series descriptions that include the term ‘White Australia Policy’ you get very few results. There are many, many records relating to the surveillance and control of non-white populations in the National Archives of Australia, but the descriptions rarely include that phrase. You have to know the language of the racist bureaucracy that created the system in order to find the records.&lt;/p&gt;
+
+&lt;p&gt;Our own descriptive systems, our own language, our own words can maintain the invisibility, the otherness, of people marginalised by past governments.&lt;/p&gt;
+
+&lt;p&gt;Using and sharing these sources, analysing their contents, and looking for patterns — these all help cut across the biases of our descriptive systems. While searching for ‘White Australia Policy’ in the National Archives is not very productive, I can harvest and package data about relevant series and &lt;a href=&quot;https://glam-workbench.github.io/naa-wap/&quot;&gt;share them in a public repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Or I can take data scraped from early naturalisation applications in the Archives and create &lt;a href=&quot;https://twitter.com/people_aus&quot;&gt;a Twitter bot&lt;/a&gt; that just tweets their names and links to their files — many names, many cultures, these were the people of Australia.&lt;/p&gt;
+
+&lt;p&gt;The Real Face of White Australia Twitter bot uses data transcribed from files used in the administration of the White Australia Policy to create little stories about the people who lived under its restrictions. These were the people of Australia.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;a href=&quot;https://twitter.com/invisibleaus&quot;&gt;&lt;img src=&quot;https://timsherratt.org/assets/images/invisible_oz_bot.png&quot; alt=&quot;Stories from InvisibleAus Twitter bot&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;&lt;a href=&quot;https://twitter.com/invisibleaus&quot;&gt;@InvisibleAus&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In recent years, the Australian government invented a new category of ‘Illegal Maritime Arrivals’ to justify the brutal treatment of asylum seekers. Amongst its planned changes to the citizenship test is a much higher level of English language skills. Last year a senator from Queensland suggested a return to the White Australia Policy would not be a bad thing.&lt;/p&gt;
+
+&lt;p&gt;A couple of years ago the UNHCR launched the &lt;a href=&quot;https://www.unhcr.org/news/videos/2016/5/5734a1394/refugee-or-migrant-words-matter-say-our-high-profile-supporters.html&quot;&gt;#wordsmatter campaign&lt;/a&gt; to remind people in well-off countries like Australia that asylum seekers were not ‘illegal’, and refugees were people forced to flee their homes due to danger or persecution.&lt;/p&gt;
+
+&lt;p&gt;Words matter — as people who work with text, who describe collections, who create and consume metadata, we know this. But still…&lt;/p&gt;
+
+&lt;p&gt;The National Archives of Australia maintains a hierarchical thesaurus of government functions — things like Defence, and Education. It’s intended to aid the discoverability of online resources, but there’s also a version used in RecordSearch itself to help describe government agencies. I wasted a lot of time comparing versions of this thesaurus, but one interesting thing I noticed was this.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;a href=&quot;http://timsherratt.org/research-notebook/aggregated-archives/notes/naa-functions/&quot;&gt;&lt;img src=&quot;https://timsherratt.org/assets/images/agift-changes.png&quot; alt=&quot;Changes in AGIFT&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;More details at &lt;a href=&quot;http://timsherratt.org/research-notebook/aggregated-archives/notes/naa-functions/&quot;&gt;http://timsherratt.org/research-notebook/aggregated-archives/notes/naa-functions/&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Between version 1 and version 3 of this thesaurus, the function: ‘Community Protection — Coastal Surveillance’ was replaced by ‘National Security — Border Protection’. You could argue that this is in line with changes to the names of the relevant government agencies — instead of customs officers we now have Border Force. But agencies change names all the time. Has the function itself actually changed?&lt;/p&gt;
+
+&lt;p&gt;Words matter. They help enforce boundaries and define who belongs. Whose borders are we actually protecting?&lt;/p&gt;</content><author><name>Tim Sherratt</name></author><summary type="html">Invited presention at From text to data – new ways of reading, National Library of Sweden, 5 February 2019.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timsherratt.org/assets/images/immigrants-origin-feature.png" /></entry><entry><title type="html">2018 — the making and the talking</title><link href="https://timsherratt.org/blog/making-talking/" rel="alternate" type="text/html" title="2018 — the making and the talking" /><published>2018-12-27T00:00:00+11:00</published><updated>2018-12-27T00:00:00+11:00</updated><id>https://timsherratt.org/blog/making-talking</id><content type="html" xml:base="https://timsherratt.org/blog/making-talking/">&lt;p&gt;This was the year I finally understood the possibilities of Jupyter notebooks for learning, experimentation, and collaboration. As a result, I spent a lot of time building up a collection of Jupyter-powered tools and examples in my GLAM Workbench.&lt;/p&gt;
+
+&lt;p&gt;I also made some much needed progress on LODBook 3 — a Jekyll plugin and theme that helps you create rich, linked data enriched, historical narratives.&lt;/p&gt;
+
+&lt;p&gt;In other ways 2018 was a bit of a challenge and, as I head into 2019, I’ll be further cutting back my hours at the University of Canberra to just one day per week. Hopefully this will help me get a few things into balance, and give me more time to spend on the sorts of things listed below — things that help people explore and use digital collections.&lt;/p&gt;
+
+&lt;p&gt;If you think this work is useful or important, you might like to &lt;a href=&quot;https://www.patreon.com/timsherratt&quot;&gt;support me on Patreon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For regular updates throughout the year, follow &lt;a href=&quot;https://twitter.com/wragge&quot;&gt;@wragge&lt;/a&gt; on Twitter or visit &lt;a href=&quot;https://www.facebook.com/101dhhacks/&quot;&gt;101 DH Hacks&lt;/a&gt; on Facebook.&lt;/p&gt;
+
+&lt;h2 id=&quot;posts-and-articles&quot;&gt;Posts and articles&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://101dhhacks.net/2018/01/21/trove-bots-for-all/&quot;&gt;Trove bots for all!&lt;/a&gt;, 101 DH Hacks, 21 January 2018 — make your very own Trove Twitter bot using Glitch&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://insidestory.org.au/withheld-pending-advice/&quot;&gt;‘Withheld, pending advice’&lt;/a&gt; , &lt;em&gt;Inside Story&lt;/em&gt;, 2 February 2018 — a summary of my research on ‘closed’ files in the National Archives of Australia&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://timsherratt.org/research-notebook/closed-access/notes/Closed-Access-2017-update/&quot;&gt;Closed Access 2017 update&lt;/a&gt;, Open Research Notebook, 18 February 2018 — details of my annual harvest of records in the National Archives of Australia with the access status of ‘closed’&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://timsherratt.org/research-notebook/historic-hansard/notes/two-way-direct-linking/&quot;&gt;An experiment in two-way direct linking using Hypothes.is&lt;/a&gt;, Open Research Notebook, 20 February 2018 — creating two-way direct links to quotes in Historic Hansard&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://timsherratt.org/blog/records-of-resistance/&quot;&gt;Records of Resistance&lt;/a&gt;, 1 March 2018 — working on the State Library of NSW’s Tribune negatives collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://timsherratt.org/research-notebook/records-resistance/notes/tribune-metadata/&quot;&gt;Tribune negatives metadata and licensing&lt;/a&gt;, Open Research Notebook, 4 March 2018 — some notes relating to my harvest of metadata and images from the State Library of NSW’s Tribune negatives collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pro.europeana.eu/post/mapping-migration-in-the-arts-the-real-face-of-white-australia&quot;&gt;Mapping Migration in the arts: The Real Face of White Australia&lt;/a&gt;, 8 March 2018, interview with Adrian Murphy for the Europeana Migration campaign&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://timsherratt.org/blog/filing-cabinets-secrets/&quot;&gt;Filing cabinets, secrets, and the introduction that never was&lt;/a&gt;, 30 March 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dx.doi.org/10.17613/M6XW0G&quot;&gt;Hacking heritage: understanding the limits of online access&lt;/a&gt;, preprint of a chapter submitted for publication as part of &lt;em&gt;The Routledge International Handbook of New Digital Practices in Galleries, Libraries, Archives, Museums and Heritage Sites&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;presentations-and-workshops&quot;&gt;Presentations and workshops&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/KDh4Vn-hClE&quot;&gt;Hacking Cultural Heritage Collections to Understand the Limits of Access&lt;/a&gt; (video, &lt;a href=&quot;https://slides.com/wragge/hacking-collections&quot;&gt;slides&lt;/a&gt;), Deakin University’s Contemporary Histories Research Group History Seminar Series, 11 April 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/digital-history-workshop-anu-2018&quot;&gt;Digital History Workshop&lt;/a&gt; (slides), workshop for ANU History HDR students, April 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/trove-tips-tricks&quot;&gt;Trove Tips &amp;amp; Tricks&lt;/a&gt; (slides), research methods workshop at University of Canberra, April 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/trove-data-workshop&quot;&gt;Trove as a platform for digital research and creativity&lt;/a&gt; (slides), research methods workshop at University of Canberra, May 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/hons-workshop-anu-2018&quot;&gt;Digital History Workshop&lt;/a&gt; (slides), workshop for ANU History Honours students, May 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://makerspace.library.curtin.edu.au/playing-linked-open-data/&quot;&gt;Playing with Linked Open Data&lt;/a&gt;, Karen Miller’s report on my workshop at the Curtin University Makerspace, 26 July 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/lod-for-historians-enriching-narratives-with-structured-data&quot;&gt;LOD for historians: enriching narratives with structured data&lt;/a&gt; (slides), presentation at Landscape Data Art &amp;amp; Models as Linked Open Data, Curtin University, 27 July 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/trove-tips-tricks-sailing-into-history&quot;&gt;Trove Tips &amp;amp; Tricks&lt;/a&gt;, presentation for Sailing Into History Family History Congress, Batemans Bay, September 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/I2u-aE0E97I&quot;&gt;Exploring GLAM data (with Jupyter notebooks)&lt;/a&gt; (video, &lt;a href=&quot;https://nbviewer.jupyter.org/github/GLAM-Workbench/glam-workbench-presentations/blob/master/Exploring-GLAM-Data.ipynb&quot;&gt;notebook&lt;/a&gt;), ARDC Tech Talk, 18 September 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://slides.com/wragge/small-data-hand-crafted-infrastructure&quot;&gt;Small data and hand-crafted infrastructure&lt;/a&gt; (slides), presentation for the School of Humanities and Social Inquiry’s Provocations seminar series, University of Wollongong, 27 September 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/ONnxd-1KJFI&quot;&gt;A GLAM data workbench for reluctant researchers&lt;/a&gt; (video, &lt;a href=&quot;https://nbviewer.jupyter.org/github/wragge/ndf2018/blob/master/NDF2018.ipynb&quot;&gt;notebook&lt;/a&gt;), presentation at National Digital Forum, Wellington, 20 November 2018&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/hBd66FTs8zc&quot;&gt;LODBook III: The Voyage Home&lt;/a&gt; (video, &lt;a href=&quot;https://slides.com/wragge/lodbook-3&quot;&gt;slides&lt;/a&gt;), presentation at National Digital Forum, Wellington, 21 November 2018&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;assorted-tools-code-and-data&quot;&gt;Assorted tools, code, and data&lt;/h2&gt;
+
+&lt;p&gt;These are mostly updates, but I also created a few remixable apps using &lt;a href=&quot;https://glitch.com&quot;&gt;Glitch&lt;/a&gt; that spawned an &lt;a href=&quot;https://twitter.com/wragge/lists/trove-bots&quot;&gt;army of Trove Twitter bots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/edit/#!/trove-list-bot&quot;&gt;Trove List Bot&lt;/a&gt; (Glitch) — create a Twitter bot that tweets new or randomly-selected items from a Trove list&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/edit/#!/trove-title-bot&quot;&gt;Trove Title Bot&lt;/a&gt; (Glitch) — create a Twitter bot that tweets articles from selected Trove newspaper titles&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/edit/#!/trove-collection-bot&quot;&gt;Trove Collection Bot&lt;/a&gt; (Glitch) — create a Twitter bot that tweets Trove items from a particular collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/edit/#!/trove-tag-bot&quot;&gt;Trove Tag Bot&lt;/a&gt; (Glitch) — create a Twitter bot that tweets Trove items with a particular tag&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://glitch.com/edit/#!/trove-headline-roulette&quot;&gt;Trove Headline Roulette&lt;/a&gt; (Glitch version) — a Glitch version of this simple game using Trove’s digitised newspapers&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://trove-titles.herokuapp.com/&quot;&gt;Trove Titles: Exploring Trove’s digitised journals&lt;/a&gt; — updated to feature newly added content and to use version 2 of the Trove API; new titles harvested monthly&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/recordsearch_tools&quot;&gt;RecordSearch Tools&lt;/a&gt; — scraper library updated to work with Python 3&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/srnsw-indexes&quot;&gt;SRNSW Indexes&lt;/a&gt; — harvesting code updated to work with the new index layout; updated all indexes and added &lt;a href=&quot;https://github.com/wragge/srnsw-indexes/blob/master/data/criminal-indictments-1863-1919.csv&quot;&gt;‘Criminal Indictments, 1863-1919’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/troveharvester&quot;&gt;Trove Newspaper Harvester&lt;/a&gt; — various updates and fixes for better Python 3 compatibility and to handle newspaper articles without titles&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/diy-redactionart&quot;&gt;DIY #redactionart&lt;/a&gt; — added another SVG outline to the collection, this one bearing a remarkable resemblance to Donald Trump&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/trove-texts&quot;&gt;Trove texts&lt;/a&gt; — OCRd text and metadata harvested from Trove’s digitised journals; currently includes text from 4465 issues of &lt;em&gt;The Bulletin&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/dxlab-tribune&quot;&gt;DXLab Tribune&lt;/a&gt; — updated harvest of &lt;a href=&quot;https://github.com/wragge/dxlab-tribune/blob/master/negatives/csv/all_items.csv&quot;&gt;item metadata&lt;/a&gt; from the State Library of NSW’s Tribune collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/lodbook-james-minahan&quot;&gt;LODBook 3&lt;/a&gt; — latest code and &lt;a href=&quot;https://wragge.github.io/lodbook-james-minahan/chapters/chapter-1/&quot;&gt;demo content&lt;/a&gt; for the &lt;a href=&quot;https://timsherratt.org/research-notebook/lodbooks/&quot;&gt;LODBook project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wragge/realface-data&quot;&gt;Real Face of White Australia data&lt;/a&gt; — monthly updates of data from the &lt;a href=&quot;http://transcribe.realfaceofwhiteaustralia.net/#/&quot;&gt;Real Face of White Australia transcription project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://easyzoom.com/image/127772&quot;&gt;Faces of the Tribune&lt;/a&gt; — all the faces extracted from the State Library of NSW’s Tribune negatives in one very big, deep zoomable, image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;glam-workbench&quot;&gt;GLAM Workbench&lt;/h2&gt;
+
+&lt;p&gt;This is a collection of tools, apps, and examples to help you work with data from galleries, libraries, archives, and museums (the GLAM sector). It’s created using &lt;a href=&quot;http://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt; notebooks which combine code, text, and data in a way that encourages experimentation and learning. The notebooks are organised into repositories that focus on particular collections or technologies.&lt;/p&gt;
+
+&lt;p&gt;This is very much a work-in-progress. As you can see from the list below, I’m still reorganising some of the repositories. I’ve started work on a &lt;a href=&quot;https://glam-workbench.github.io/&quot;&gt;documentation site&lt;/a&gt; that will provide brief descriptions of each notebook, as well as some suggested pathways through the repositories.&lt;/p&gt;
+
+&lt;h3 id=&quot;repositories&quot;&gt;Repositories&lt;/h3&gt;
+
+&lt;p&gt;The links below go to the repositories on GitHub. For easier browsing of the notebooks you might want to use &lt;a href=&quot;https://nbviewer.jupyter.org/&quot;&gt;NBViewer&lt;/a&gt;. To run the notebooks live, open the GitHub links in &lt;a href=&quot;https://mybinder.org/&quot;&gt;Binder&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-workbench&quot;&gt;OzGLAM Workbench&lt;/a&gt; — this is no longer being updated; sections and notebooks in this repository are gradually being moved into standalone repositories&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-data&quot;&gt;OzGLAM Data&lt;/a&gt; — harvest details of datasets shared by GLAM institutions through to various state and national data portals; results available as a &lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-data/blob/master/gov-glam-datasets-all-formats.csv&quot;&gt;CSV&lt;/a&gt; or on &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1OUbgQPRWnDLOvr8Wes0E-UAno1mk_8f12PFd08pVGGo/edit?usp=sharing&quot;&gt;Google Sheets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-workbench-naa-wap&quot;&gt;OzGLAM Data NAA: White Australia Policy&lt;/a&gt; —  harvest and explore records relating to the White Australia Policy in the National Archives of Australia; includes item-level metadata harvested from &lt;a href=&quot;https://nbviewer.jupyter.org/github/glam-workbench/ozglam-workbench-naa-wap/blob/master/RecordSearch/Summary%20of%20all%20harvested%20series.ipynb&quot;&gt;23 series&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-workbench-naa-asio&quot;&gt;OzGLAM Data NAA: ASIO&lt;/a&gt; — harvest and explore records relating to the White Australia Policy in the National Archives of Australia; includes item-level metadata harvested from &lt;a href=&quot;https://nbviewer.jupyter.org/github/GLAM-Workbench/ozglam-workbench-naa-asio/blob/master/RecordSearch/Summary%20of%20all%20harvested%20series.ipynb&quot;&gt;18 series&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-data-records-of-resistance&quot;&gt;OzGLAM Data: Records of Resistance&lt;/a&gt; — explore metadata from the State Library of NSW’s Tribune collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/archway-harvesting&quot;&gt;Archway harvesting (Archives New Zealand)&lt;/a&gt; — harvest record metadata from Archives New Zealand’s Archway database&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/te-papa-api&quot;&gt;Te Papa collections API&lt;/a&gt; — explore Te Papa’s collection API; includes some simple mapping examples&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/trove-lists&quot;&gt;Trove lists&lt;/a&gt; — use the Trove API to download and analyse the contents of Trove lists&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/trove-unpublished&quot;&gt;Trove unpublished&lt;/a&gt; — an attempt to use the Trove API to find and explore unpublished works that might be entering the public domain on 1 January 2019&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/ozglam-data-records-of-resistance&quot;&gt;OzGLAM Data Records of Resistance&lt;/a&gt; — analyse metadata from the State Library of NSW’s Tribune negatives collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/image-recognition&quot;&gt;Image recognition&lt;/a&gt; — try some basic machine learning examples using Tensorflow to tag and categorise images in the State Library of NSW’s Tribune negatives collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/facial-detection&quot;&gt;Facial detection&lt;/a&gt; — use computer vision technologies to detect faces in the State Library of NSW’s Tribune negatives collection&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/digitalnz&quot;&gt;DigitalNZ&lt;/a&gt; — examples using the DigitalNZ API; includes notebooks to harvest searches in Papers Past, and to search by country in DigitalNZ&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/trove-newspaper-harvester&quot;&gt;Trove newspaper harvester&lt;/a&gt; — making my existing command line tool for harvesting large quantities of Trove newspaper articles available through an easy-to-use web interface; includes some examples of how you can analyse and visualise the results&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/trove-newspapers&quot;&gt;Trove newspapers&lt;/a&gt; — various examples of harvesting, analysing, and visualising data from Trove’s digitised newspapers&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GLAM-Workbench/recordsearch&quot;&gt;RecordSearch&lt;/a&gt; — use the RecordSearch Tools library to harvest and analyse collection metadata from the National Archives of Australia&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;apps&quot;&gt;Apps&lt;/h3&gt;
+
+&lt;p&gt;Using the &lt;a href=&quot;https://github.com/oschuett/appmode&quot;&gt;Appmode&lt;/a&gt; extension and the &lt;a href=&quot;https://mybinder.org/&quot;&gt;Binder&lt;/a&gt; service you can hide the code cells in Jupyter notebooks and run them as handy little apps. Of course if you want to dig around in the code you can — just click on the ‘Edit App’ button.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/trove-newspapers/master?urlpath=%2Fapps%2FSave-page-image.ipynb&quot;&gt;Download a high-resolution page image from Trove’s digitised newspapers&lt;/a&gt; (part of the Trove Newspapers repository)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nbviewer.jupyter.org/github/GLAM-Workbench/trove-newspapers/blob/master/QueryPic_deconstructed.ipynb&quot;&gt;QueryPic deconstructed&lt;/a&gt; — visualise searches in Trove’s digitised newspapers with a deconstructed, extended, and hackable version of my classic QueryPic tool (part of the Trove Newspapers repository)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/recordsearch/master?urlpath=apps%2Fget_images_from_a_digitised_file.ipynb&quot;&gt;Download the contents of a digitised file from the National Archives of Australia&lt;/a&gt; (part of the RecordSearch repository)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mybinder.org/v2/gh/GLAM-Workbench/facial-detection/master?urlpath=%2Fapps%2Ffocus-on-faces.ipynb&quot;&gt;Focus on faces&lt;/a&gt; — an experimental app using facial detection in the Tribune collection (part of the Facial Detection repository)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Tim Sherratt</name></author><summary type="html">This was the year I finally understood the possibilities of Jupyter notebooks for learning, experimentation, and collaboration. As a result, I spent a lot of time building up a collection of Jupyter-powered tools and examples in my GLAM Workbench.</summary></entry><entry><title type="html">Filing cabinets, secrets, and the introduction that never was</title><link href="https://timsherratt.org/blog/filing-cabinets-secrets/" rel="alternate" type="text/html" title="Filing cabinets, secrets, and the introduction that never was" /><published>2018-03-30T00:00:00+11:00</published><updated>2018-03-30T00:00:00+11:00</updated><id>https://timsherratt.org/blog/filing-cabinets-secrets</id><content type="html" xml:base="https://timsherratt.org/blog/filing-cabinets-secrets/">&lt;p&gt;I’ve just finished a draft of a chapter entitled ‘Hacking heritage: understanding the limits of online access’. I’ve &lt;a href=&quot;http://dx.doi.org/10.17613/M6XW0G&quot;&gt;uploaded the preprint to Humanities Commons&lt;/a&gt; and would welcome any comments or thoughts.&lt;/p&gt;
+
+&lt;p&gt;As often seems the case, I had to sacrifice my scene-setting introduction in order to make the word limit. Truth be told, the chapter probably works better without it. But the original introduction  stands fairly well on it’s own, so rather than just delete it, why not recycle it as a blog post!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;secrets&quot;&gt;Secrets&lt;/h2&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;a href=&quot;http://www.abc.net.au/news/about/backstory/news-coverage/2018-02-03/the-cabinet-files-and-how-they-were-found/9393008&quot;&gt;&lt;img src=&quot;https://timsherratt.org/assets/images/cabinet-files.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;ABC website, 3 February 2018&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In January 2018, Australians &lt;a href=&quot;http://www.abc.net.au/news/2018-01-31/cabinet-files-reveal-inner-government-decisions/9168442&quot;&gt;learnt about&lt;/a&gt; ‘one of the biggest national security breaches in the nation’s history’. The Australian Broadcasting Commission (ABC) had obtained ‘hundreds of top-secret and highly classified cabinet documents’ accidentally sold off in some old, locked filing cabinets.  The ‘story of their release’, claimed the ABC, was ‘as gripping as it is alarming and revealing’.&lt;/p&gt;
+
+&lt;p&gt;Within days, the Australian Security Intelligence Organisation had stepped in, stuffing the wayward documents into secure briefcases and wheeling away the filing cabinets. As an act of security theatre it offered reassurance — the nation’s secrets were in safe hands once more.&lt;/p&gt;
+
+&lt;p&gt;A few days before this ‘breach’ was revealed, the &lt;em&gt;Canberra Times&lt;/em&gt; &lt;a href=&quot;http://www.canberratimes.com.au/act-news/conditions-inside-canberras-molonglo-war-camp-revealed-in-centuryold-letters-20180111-h0h73u.html&quot;&gt;told the story&lt;/a&gt; of an internment camp established on the outskirts of the nation’s capital during World War I. Conditions in the camp were described, the newspaper noted, in ‘a series of letters recently released by the National Archives of Australia’.&lt;/p&gt;
+
+&lt;p&gt;These two stories — one a national scandal, the other a piece of local history — seem to have little in common. But they both reflect the way in which access to government records is often imbued with a sense of drama or mystery.&lt;/p&gt;
+
+&lt;p&gt;It’s true that Cabinet records are subject to some special protections, but like other government records they are expected to be opened to public scrutiny after 20 years  (30 years in the case of cabinet notebooks). Some files are withheld or redacted, but such restrictions can be challenged or reconsidered. Some of the ‘highly classified’  documents the ABC revealed were already more than ten years old, well on their way towards public release. Instead of a massive security breach, we might argue that this was merely a case of accelerated release.&lt;/p&gt;
+
+&lt;p&gt;The ABC &lt;a href=&quot;http://www.abc.net.au/news/about/backstory/news-coverage/2018-02-03/the-cabinet-files-and-how-they-were-found/9393008&quot;&gt;justified its actions&lt;/a&gt; in releasing the Cabinet documents by invoking the public’s ‘right to know’. But the idea that the public has a right to access government records is hardly new. In 1955, with the Cold War raging, the Commonwealth Archives Committee emphasised the ‘moral obligation’ of democratic governments to make the records of their activities available for research. ‘In doing so’, the Committee argued, ‘they make a significant contribution to the continuing search for truth which is an essential part of the continuing democratic process’. These rights have their limits, but the idea of public access is at the core of the Archives Act, passed in 1983. Most government records are opened to the public without the need for crusading journalists.&lt;/p&gt;
+
+&lt;p&gt;The ‘recently released’ documents cited by the &lt;em&gt;Canberra Times&lt;/em&gt;  are actually available in a &lt;a href=&quot;http://www.naa.gov.au/cgi-bin/Search?O=I&amp;amp;Number=361347&quot;&gt;file opened in 1975&lt;/a&gt;, and linked from a &lt;a href=&quot;http://www.naa.gov.au/collection/snapshots/internment-camps/WWI/molonglo.aspx&quot;&gt;page created in 2007&lt;/a&gt; on the National Archives’ website. Perhaps it was a mistake, or perhaps it was an attempt to make the the story seem a little more exciting. The interest-level of archival documents, it seems, is inversely related to the number of people who have seen them. Authors and publishers readily invoke this sense of mystery in spruiking their wares — phrases like ‘recently declassified’ or ‘previously secret’ add a sense of drama to historical research. The routine bureaucratic processes through which information is controlled and released give way to stories of discovery and liberation.&lt;/p&gt;
+
+&lt;p&gt;Yes, information is withheld. Voices are suppressed or missing. Access is never truly open. But if we focus on the threshold moments, when information becomes somehow ‘public’, we miss the opportunity to interrogate the forces that control and shape the historical record. We make it harder to see what is missing.&lt;/p&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;p&gt;Commonwealth Archives Committee. (1955). Report and recommendations on the granting of access to Commonwealth archives for non-official research purposes (A6954, 2). National Archives of Australia.&lt;/p&gt;
+
+&lt;p&gt;Department of Defence. (1917-1919). Inspection of Australian Prisoner of War Camps by Consul General for Sweden Closure Prisoners of War Camp at Bourke (MP367/1, 425/10/299). National Archives of Australia. Retrieved from &lt;a href=&quot;http://www.naa.gov.au/cgi-bin/Search?O=I&amp;amp;Number=361347&quot;&gt;http://www.naa.gov.au/cgi-bin/Search?O=I&amp;amp;Number=361347&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Lyons, J. (2018, February 3). Behind one of the biggest national security breaches in Australia’s history. &lt;em&gt;ABC News&lt;/em&gt;. Retrieved from &lt;a href=&quot;http://www.abc.net.au/news/about/backstory/news-coverage/2018-02-03/the-cabinet-files-and-how-they-were-found/9393008&quot;&gt;http://www.abc.net.au/news/about/backstory/news-coverage/2018-02-03/the-cabinet-files-and-how-they-were-found/9393008&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;McGhee, A., &amp;amp; McKinnon, M. (2018, January 31). This is what’s in the secret documents ASIO wants to keep under lock and key. &lt;em&gt;ABC News&lt;/em&gt;. Retrieved from &lt;a href=&quot;http://www.abc.net.au/news/2018-01-31/cabinet-files-reveal-inner-government-decisions/9168442&quot;&gt;http://www.abc.net.au/news/2018-01-31/cabinet-files-reveal-inner-government-decisions/9168442&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;National Archives of Australia. (n.d.). &lt;em&gt;Access to records under the Archives Act - Fact sheet 10&lt;/em&gt;. Retrieved from &lt;a href=&quot;http://naa.gov.au/collection/fact-sheets/fs10.aspx&quot;&gt;http://naa.gov.au/collection/fact-sheets/fs10.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;National Archives of Australia. (n.d.). Molonglo, Australian Capital Territory (1918–19). Retrieved from &lt;a href=&quot;http://www.naa.gov.au/collection/snapshots/internment-camps/WWI/molonglo.aspx&quot;&gt;http://www.naa.gov.au/collection/snapshots/internment-camps/WWI/molonglo.aspx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Trask, S. (2018, January 27). Conditions inside Canberra’s Molonglo war camp revealed in century-old letters. &lt;em&gt;Canberra Times&lt;/em&gt;. Retrieved from &lt;a href=&quot;http://www.canberratimes.com.au/act-news/conditions-inside-canberras-molonglo-war-camp-revealed-in-centuryold-letters-20180111-h0h73u.html&quot;&gt;http://www.canberratimes.com.au/act-news/conditions-inside-canberras-molonglo-war-camp-revealed-in-centuryold-letters-20180111-h0h73u.html&lt;/a&gt;&lt;/p&gt;</content><author><name>Tim Sherratt</name></author><summary type="html">I’ve just finished a draft of a chapter entitled ‘Hacking heritage: understanding the limits of online access’. I’ve uploaded the preprint to Humanities Commons and would welcome any comments or thoughts.</summary></entry><entry><title type="html">Records of Resistance</title><link href="https://timsherratt.org/blog/records-of-resistance/" rel="alternate" type="text/html" title="Records of Resistance" /><published>2018-03-01T00:00:00+11:00</published><updated>2018-03-01T00:00:00+11:00</updated><id>https://timsherratt.org/blog/records-of-resistance</id><content type="html" xml:base="https://timsherratt.org/blog/records-of-resistance/">&lt;p&gt;Last year I was lucky enough to spend a few days with the most excellent folks of the State Library of NSW’s &lt;a href=&quot;https://dxlab.sl.nsw.gov.au/&quot;&gt;DXLab&lt;/a&gt; as a &lt;a href=&quot;https://dxlab.sl.nsw.gov.au/blog/digital-drop-in-4&quot;&gt;‘Digital Drop In’&lt;/a&gt;. While I was there, I started playing around with a &lt;a href=&quot;http://archival.sl.nsw.gov.au/search/simple/repeat?DatabaseChoices[0].Name=archive&amp;amp;DatabaseChoices[0].Selected=True&amp;amp;DatabaseChoices[1].Name=archiveindex&amp;amp;DatabaseChoices[1].Selected=False&amp;amp;Fields[0].Value=tribune%20negatives&amp;amp;Fields[0].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[0].SearchInField=False&amp;amp;Fields[1].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[1].SearchInField=False&amp;amp;Filters[0].Name=Search_FieldOnlyFL&amp;amp;Filters[0].Value=False&amp;amp;Filters[0].Show=True&amp;amp;Filters[0].SearchInFilter=False&amp;amp;Filters[1].Name=Search_FieldOnlyFL&amp;amp;Filters[1].Value=False&amp;amp;Filters[1].Show=True&amp;amp;Filters[1].SearchInFilter=False%22&quot;&gt;remarkable collection of photographs&lt;/a&gt; accumulated by the &lt;em&gt;Tribune&lt;/em&gt;, the official newspaper of the Communist Party of Australia. The photos document a wide range of political issues and protests — from the &lt;a href=&quot;http://archival.sl.nsw.gov.au/search/simple/repeat?DatabaseChoices[0].Name=archive&amp;amp;DatabaseChoices[0].Selected=True&amp;amp;DatabaseChoices[1].Name=archiveindex&amp;amp;DatabaseChoices[1].Selected=False&amp;amp;Fields[0].Value=tribune%20negatives%20freedom%20ride&amp;amp;Fields[0].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[0].SearchInField=False&amp;amp;Fields[1].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[1].SearchInField=False&amp;amp;Filters[0].Name=Search_FieldOnlyFL&amp;amp;Filters[0].Value=False&amp;amp;Filters[0].Show=True&amp;amp;Filters[0].SearchInFilter=False&amp;amp;Filters[1].Name=Search_FieldOnlyFL&amp;amp;Filters[1].Value=False&amp;amp;Filters[1].Show=True&amp;amp;Filters[1].SearchInFilter=False%22&quot;&gt;Freedom Ride of 1965&lt;/a&gt; through to the &lt;a href=&quot;http://archival.sl.nsw.gov.au/search/simple/repeat?DatabaseChoices[0].Name=archive&amp;amp;DatabaseChoices[0].Selected=True&amp;amp;DatabaseChoices[1].Name=archiveindex&amp;amp;DatabaseChoices[1].Selected=False&amp;amp;Fields[0].Value=tribune%20negatives%20gulf%20war&amp;amp;Fields[0].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[0].SearchInField=False&amp;amp;Fields[1].FieldName=Search_SearchSimple_FieldLabel&amp;amp;Fields[1].SearchInField=False&amp;amp;Filters[0].Name=Search_FieldOnlyFL&amp;amp;Filters[0].Value=False&amp;amp;Filters[0].Show=True&amp;amp;Filters[0].SearchInFilter=False&amp;amp;Filters[1].Name=Search_FieldOnlyFL&amp;amp;Filters[1].Value=False&amp;amp;Filters[1].Show=True&amp;amp;Filters[1].SearchInFilter=False%22&quot;&gt;First Gulf War&lt;/a&gt;. More than 58,000 of these images have been digitised and are available online.&lt;/p&gt;
+
+&lt;p&gt;The first thing I did was to harvest the metadata from the catalogue, so I could start &lt;a href=&quot;https://wragge.github.io/dxlab-tribune/negatives.html&quot;&gt;poking around inside&lt;/a&gt; — looking at things like people, places, and word frequencies. As more and more of the images have gone online I’ve been updating my harvests at regular intervals and &lt;a href=&quot;https://github.com/wragge/dxlab-tribune/tree/master/negatives/csv&quot;&gt;sharing CSV-formatted versions&lt;/a&gt; through GitHub. I’ve so far managed to find at least one example of an event that was photographed both by the &lt;em&gt;Tribune&lt;/em&gt; and by ASIO — offering &lt;a href=&quot;http://timsherratt.org/research-notebook/records-resistance/notes/juxtaposed/&quot;&gt;rather different perspectives&lt;/a&gt;. I also &lt;a href=&quot;http://discontents.com.au/the-badge-of-the-outsider-open-access-and-closed-boundaries/&quot;&gt;talked a bit&lt;/a&gt; about the collection at Sharing is Caring 2018 in Aarhus.&lt;/p&gt;
+
+&lt;figure class=&quot;align-center&quot;&gt;
+  &lt;a href=&quot;http://digital.sl.nsw.gov.au/delivery/DeliveryManagerServlet?dps_pid=FL4478014&amp;amp;embedded=true&amp;amp;toolbar=false&quot;&gt;&lt;img src=&quot;https://timsherratt.org/assets/images/c051140008.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+  &lt;figcaption&gt;I even found a picture of me at Pine Gap in 1987.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;But the DXLab has been patiently waiting for me to build &lt;em&gt;something&lt;/em&gt;.  In my usual, easily-distracted way, I’ve struggled to decide what that &lt;em&gt;something&lt;/em&gt; might be — a discovery interface, a visualisation, a timeline, a bot?&lt;/p&gt;
+
+&lt;p&gt;Now I think I know.&lt;/p&gt;
+
+&lt;p&gt;A few weeks ago, Bonnie Wildie &lt;a href=&quot;https://youtu.be/XhTzE67HrhE&quot;&gt;spoke at the OpenGlam Miniconf&lt;/a&gt;, part of Linux.conf.au. Bonnie created a &lt;a href=&quot;https://twitter.com/BonnieWildie/status/874166580900274176&quot;&gt;wonderful #redactionart dress&lt;/a&gt; using the little critters I &lt;a href=&quot;https://github.com/wragge/diy-redactionart&quot;&gt;discovered living in ASIO files&lt;/a&gt; at the National Archives of Australia. In her presentation she talked about the thinking behind the dress — not just making, but &lt;em&gt;critical&lt;/em&gt; making.&lt;/p&gt;
+
+&lt;p&gt;It’s funny to see your own practices through another person’s eyes. Bonnie described how I’d shared my ASIO explorations from the start, and how the &lt;a href=&quot;https://twitter.com/hashtag/redactionart&quot;&gt;#redactionart&lt;/a&gt; hashtag had helped turn a practice designed to withhold information into an opportunity for public engagement with the records.&lt;/p&gt;
+
+&lt;p&gt;I’m wondering if we can do the same with the &lt;em&gt;Tribune&lt;/em&gt; photographs.&lt;/p&gt;
+
+&lt;p&gt;Just today, Kathleen Fitzpatrick opened a draft of her new book &lt;em&gt;Generous Thinking&lt;/em&gt; for public comment. In the section on ‘Working in public’, &lt;a href=&quot;https://generousthinking.hcommons.org/4-working-in-public/#pFapmiiwhtetpwownetiioibpsrpmntwkoccbsIowtnjaspcdubamcpiscTrocmsaasucfmfrcifew&quot;&gt;she argues&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;if we hope to engage the public with our work, we need to ensure that it is open in the broadest possible sense: open to response, to participation, to more new thought, more new writing, and more kinds of cultural creation by more kinds of public scholars.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are many researchers and activists around the country who know more about the history of political action than I do. There are many people whose lives have been touched by the events documented in the &lt;em&gt;Tribune&lt;/em&gt; collection. At a time when restrictions on people and information are being increased in the name of ‘security’, it’s important to remember the role of resistance.&lt;/p&gt;
+
+&lt;p&gt;I might make an interface. I might make a bot. But I’ll be more interested in what other people might do with the &lt;em&gt;Tribune&lt;/em&gt; collection and how I can help them. The &lt;em&gt;thing&lt;/em&gt; I’ll be creating is an ongoing experiment in openness, engagement, and critical making. I’ll continue to poke around in the metadata, creating new points of access and exploration. I’ll also be exploring how we can connect the &lt;em&gt;Tribune&lt;/em&gt; photos to other collections around the country.&lt;/p&gt;
+
+&lt;p&gt;Who wants to join in? I’ll be using the &lt;a href=&quot;https://twitter.com/hashtag/recordsofresistance?f=tweets&quot;&gt;#recordsofresistance&lt;/a&gt; hashtag, and posting updates to my &lt;a href=&quot;https://timsherratt.org/research-notebook/records-resistance/&quot;&gt;open research notebook&lt;/a&gt;. If you find something interesting in the photos, write something about the events they document, or make something with the data, please share the results using #recordsofresistance. Let’s build something together.&lt;/p&gt;</content><author><name>Tim Sherratt</name></author><summary type="html">Last year I was lucky enough to spend a few days with the most excellent folks of the State Library of NSW’s DXLab as a ‘Digital Drop In’. While I was there, I started playing around with a remarkable collection of photographs accumulated by the Tribune, the official newspaper of the Communist Party of Australia. The photos document a wide range of political issues and protests — from the Freedom Ride of 1965 through to the First Gulf War. More than 58,000 of these images have been digitised and are available online.</summary></entry></feed>
