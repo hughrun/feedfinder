@@ -102,3 +102,7 @@ feedfinder.getSite("https://www.example.com/rss")
 Well-formed web pages will list their RSS/Atom feed in a `<link>`element in the head, however sometimes there is a feed for a page but it is not referred to in a head `<link>` element. In this case, _feedfinder_ looks in the body of the page for anchor links (i.e. `<a>` elements) that look like they might point to feeds. If there is more than one link to a likely feed, **the first one listed will be used**. This is likely to be what you want, but there is only so much that can be done with poorly-structured pages so ...it might not be.
 
 YouTube user, channel and playlist pages should all work as long as YouTube does not change the way it constructs RSS feeds - they are not listed on pages, but as the form is known, we can construct them from the ID.
+
+## Acknowledgements
+
+Thanks to Sam Popowich and  Tim Sherrat for licensing their blogs CC-BY, thus allowing me to use their homepages and feed files as examples for testing.

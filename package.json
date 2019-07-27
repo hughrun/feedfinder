@@ -4,7 +4,7 @@
   "description": "A module for finding RSS and Atom feeds from a given URL and vice-versa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
     "feedparser-promised": "^2.0.1"
   },
   "devDependencies": {
-    "debug": "^4.1.1"
+    "debug": "^4.1.1",
+    "mocha": "^6.2.0",
+    "nock": "^10.0.6"
   }
 }
