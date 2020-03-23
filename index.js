@@ -15,7 +15,7 @@ const getFeed = function(url) {
   return new Promise( (resolve, reject) => {
     axios(url).then(function(res) {
       const $ = cheerio.load(res.data)
-      const title = $('title').text() // get the title from the head <title> element
+      const title = $('head title').text() // get the title from the head <title> element
       // get the RSS or Atom feed element
       const rss = $('link[type="application/rss+xml"]').clone()
       const atom = $('link[type="application/atom+xml"]').clone() || $('link[type="application/x.atom+xml"]').clone() || $('link[type="application/x-atom+xml"]').clone()
