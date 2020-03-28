@@ -91,8 +91,11 @@ const getSite = function(uri) {
     }
 
     function feedValid(items) {
-      console.log()
-      resolve({url: items[0].meta.link, feed: uri, title: items[0].meta.title})
+      if (items[0]) {
+        resolve({url: items[0].meta.link, feed: uri, title: items[0].meta.title})
+      } else {
+        reject('no feed data for ' + uri)
+      }
     }
 
     function feedInvalid(e) {
