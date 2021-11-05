@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/hughrun/feedfinder#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.3",
+    "axios": ">=0.21.2",
+    "cheerio": "^1.0.0-rc.10",
     "feedparser-promised": "^2.0.1"
   },
   "devDependencies": {
-    "mocha": "^7.1.1",
+    "mocha": "^9.1.3",
     "nock": "^10.0.6"
   }
 }
