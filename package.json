@@ -1,6 +1,6 @@
 {
   "name": "@hughrun/feedfinder",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A module for finding RSS and Atom feeds from a given URL and vice-versa",
   "main": "index.js",
   "scripts": {
