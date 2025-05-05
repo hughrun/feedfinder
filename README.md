@@ -1,5 +1,7 @@
 # feedfinder
 
+**NOTE FEEDFINDER IS NO LONGER MAINTAINED AND HAS DEPRECATED DEPENDENCIES**
+
 nodejs package for finding RSS and Atom feeds from a given URL and vice-versa
 
 [Reporting bugs or proposing changes](contributing.md)  
